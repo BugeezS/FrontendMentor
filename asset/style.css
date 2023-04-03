@@ -5,35 +5,35 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-#card {
-  width: 500px;
-  height: 800px;
+.card {
+  width: 400px;
+  height: 700px;
   background-color: hsl(216, 50%, 16%);
   border-radius: 25px;
   box-shadow: 20px 20px 20px 20px hsl(219, 57%, 9%);
+  padding: 30px 40px 0 40px;
 }
 
-#top_card {
+.top_card {
   display: flex;
   justify-content: center;
-  padding-top: 35px;
 }
 
-#img_equi {
-  max-width: 90%;
-  max-height: 90%;
+.img_equi {
+  height: 380px;
+  width: 380px;
   border-radius: 18px;
 }
 
-#hidden {
+.hidden {
   position: absolute;
   top: 45px;
   visibility: hidden;
-  height: 405px;
-  width: 405px;
+  height: 380px;
+  width: 380px;
 }
 
-#mid_card {
+.main_content {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -41,11 +41,10 @@ body {
 }
 
 .titre_crypto {
-  margin-right: 100px;
   font-size: 30px;
-  margin-top: -20px;
   color: white;
   font-weight: 600;
+  display: flex;
 }
 
 .content_card {
@@ -53,11 +52,9 @@ body {
   color: hsl(215, 51%, 70%);
   font-weight: 200;
   text-align: left;
-  margin-right: 100px;
-  padding-left: 40px;
 }
 
-#paragraphe {
+.price_time {
   display: flex;
   justify-content: space-between;
 }
@@ -68,42 +65,41 @@ body {
   flex-basis: 40%;
 }
 
+.logo_ether {
+  margin-top: 3px;
+}
+
 .time_left {
   color: hsl(215, 51%, 70%);
   flex-basis: 40%;
   font-weight: 700;
 }
 
-#footer_card {
+.footer_card {
   display: flex;
-  margin-top: 20px;
-  padding-left: 20px;
 }
 
-#avatar {
+.avatar {
   width: 40px;
   height: 40px;
   border: 2px white solid;
   border-radius: 50%;
-  margin-left: 20px;
-  flex-basis: 5%;
 }
 
-#footer {
-  flex-basis: 95%;
-  margin-left: 20px;
+.footer {
   color: hsl(215, 51%, 70%);
 }
-#footer span {
+.footer span {
   color: white;
 }
 
 hr {
-  width: 430px;
+  width: 350px;
   color: hsl(215, 32%, 27%);
+  display: flex;
 }
 
-#top_card:hover #hidden {
+.top_card:hover .hidden {
   visibility: visible;
   background-color: hsla(178, 100%, 50%, 0.377);
   border-radius: 25px;
@@ -111,18 +107,16 @@ hr {
           backdrop-filter: opacity(20%);
   cursor: pointer;
 }
-#top_card:hover #view {
+.top_card:hover .view {
   opacity: 100%;
-  margin: 180px;
-  margin-top: 170px;
 }
 
-#mid_card:hover .titre_crypto {
+.mid_card:hover .titre_crypto {
   cursor: pointer;
   color: hsl(178, 100%, 50%);
 }
 
-#footer_card:hover span {
+.footer_card:hover span {
   cursor: pointer;
   color: hsl(178, 100%, 50%);
 }/*# sourceMappingURL=style.css.map */
