@@ -1,0 +1,131 @@
+body {
+  background-color: hsl(217, 54%, 11%);
+  display: flex;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+#card {
+  width: 500px;
+  height: 800px;
+  overflow: hidden;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 25px;
+  box-shadow: 20px 20px 20px 20px hsl(219, 57%, 9%);
+  display: flex;
+  flex-direction: column;
+}
+
+#top_card {
+  display: flex;
+  justify-content: center;
+  padding-top: 35px;
+}
+
+#img_equi {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 18px;
+}
+
+#hidden {
+  position: absolute;
+  top: 45px;
+  visibility: hidden;
+  height: 405px;
+  width: 405px;
+}
+
+#mid_card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.titre_crypto {
+  margin-right: 100px;
+  font-size: 30px;
+  margin-top: -20px;
+  color: white;
+  font-weight: 600;
+}
+
+.content_card {
+  font-size: 20px;
+  color: hsl(215, 51%, 70%);
+  font-weight: 200;
+  text-align: left;
+  margin-right: 100px;
+  padding-left: 40px;
+}
+
+#paragraphe {
+  display: flex;
+  justify-content: space-between;
+}
+
+.valeur_ether {
+  color: hsl(178, 100%, 50%);
+  font-weight: 600;
+  flex-basis: 40%;
+}
+
+.time_left {
+  color: hsl(215, 51%, 70%);
+  flex-basis: 40%;
+  font-weight: 700;
+}
+
+#footer_card {
+  display: flex;
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+#avatar {
+  width: 40px;
+  height: 40px;
+  border: 2px white solid;
+  border-radius: 50%;
+  margin-left: 20px;
+  flex-basis: 5%;
+}
+
+#footer {
+  flex-basis: 95%;
+  margin-left: 20px;
+  color: hsl(215, 51%, 70%);
+}
+#footer span {
+  color: white;
+}
+
+hr {
+  width: 430px;
+  color: hsl(215, 32%, 27%);
+}
+
+#top_card:hover #hidden {
+  visibility: visible;
+  background-color: hsla(178, 100%, 50%, 0.377);
+  border-radius: 25px;
+  -webkit-backdrop-filter: opacity(20%);
+          backdrop-filter: opacity(20%);
+  cursor: pointer;
+}
+#top_card:hover #view {
+  opacity: 100%;
+  margin: 180px;
+  margin-top: 170px;
+}
+
+#mid_card:hover .titre_crypto {
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
+}
+
+#footer_card:hover span {
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
+}/*# sourceMappingURL=style.css.map */
